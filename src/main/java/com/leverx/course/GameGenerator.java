@@ -55,5 +55,7 @@ public class GameGenerator {
             } while (GameStatus.CHANGE_OPPONENT.equals(gameStatus));
 
         } while (!GameStatus.EXIT.equals(gameStatus));
+
+        SCANNER.close();
     }
 }
